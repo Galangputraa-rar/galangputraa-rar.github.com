@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@mariohamann/activity-graph/dist/activity-graph.min.js"></script>
+    <link rel="icon" type="img/png" href="img/Avatar-Galang.png">
+    <title>My Portofolio</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+    
+    <div class="container">
+
+        <!-- -------------  Navbar  ---------------- -->
+
+        <nav class="navbar">
+            <div class="box theme">
+                <div class="item" onclick="theme()">
+                    <ion-icon id="LightBtn"  name="sunny-outline"></ion-icon>
+                    <ion-icon id="darkBtn"  name="moon-outline" style="display: none;"></ion-icon>
+                </div>
+            </div> 
+            <div class="nav box">
+                <div class="active item">
+                    <a href="#about">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                        <p>about</p>
+                    </a>
+                    <div class="divider rtl"></div>
+                </div>
+                <div class="item">
+                    <a href="#resume">
+                        <ion-icon name="file-tray-full-outline"></ion-icon>
+                        <p>resume</p>
+                    </a>
+                    <div class="divider rtl"></div>
+                </div>
+                <div class="item">
+                    <a href="#projects">
+                        <ion-icon name="layers-outline"></ion-icon>
+                        <p>projects</p>
+                    </a>
+                    <div class="divider ltr"></div>
+                </div>
+                <div class="item">
+                    <a href="#blogs">
+                        <ion-icon name="reader-outline"></ion-icon>
+                        <p>blogs</p>
+                    </a>
+                    <div class="divider ltr"></div>
+                </div>
+                <div class="item">
+                    <a href="#contact">
+                        <ion-icon name="paper-plane-outline"></ion-icon>
+                        <p>contact</p>
+                    </a>
+                    <div class="divider ltr"></div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ==============  Profile ================== -->
+
+        <div class="box profile">
+            <img class="header" src="img/Latar Belakang.jpeg" alt="">
+            <img  class="img"  src="img/5. Pande.jpg" alt="">
+            <h2>Galang Putra</h2>
+            <p id="typed" class="colored">IT-Support-Serverless</p>
+            <ul>
+                <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/galangputra_aja/?hl=en"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+            <div class="footer">
+                <div class="divider rtl"></div>
+                <table>
+                    <tr>
+                        <td><a href="resume/Professional Modern CV Resume.pdf">My Resume<ion-icon name="file-tray-full-outline"></ion-icon></a></td>
+                        <td><a href="#">Contact Me<ion-icon name="call-outline"></ion-icon></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- ============== Content =============== -->
+
+        <div class="box content">
+            <div class="wrapper">
+            <h2 id="about">Hey <span class="colored">there!</span>👋</h2>
+            <div class="divider ltr"></div>
+            <p>I am a vocational school student who is passionate and highly dedicated in pursuing education and self-development. In addition, I also try to hone technical skills or special expertise according to the study program I choose at school. I learned various practical skills that will help me be ready for the world of work or continue my education to a higher level. hopefully i will accepted in you company!</p>
+
+            <!-- Achivements -->
+
+            <section class="achivements">
+                <div>
+                    <h3><ion-icon name="layers-outline"></ion-icon>2K+</h3>
+                    <p>Website Designed</p>
+                </div>
+                <div>
+                    <h3><ion-icon name="briefcase-outline"></ion-icon>5+</h3>
+                    <p>Years of Experience</p>
+                </div>
+                <div>
+                    <h3><ion-icon name="rocket-outline"></ion-icon>4K</h3>
+                    <p>Completed Projects</p>
+                </div>
+            </section>
+
+            <!-- Skills -->
+
+            <h2>My <span class="colored">Skills</span></h2>
+            <div class="divider ltr"></div>
+
+            <section class="skills">
+                <div><ion-icon name="logo-html5"></ion-icon><p>HTML</p></div>
+                <div><ion-icon name="logo-css3"></ion-icon><p>CSS</p></div>
+                <div><ion-icon name="logo-react"></ion-icon><p>React</p></div>
+                <div><ion-icon name="logo-python"></ion-icon><p>Python</p></div>
+                <div>
+                    <div class="circle" style="--percent:65%">
+                        <h4>65<small>%</small></h4>
+                    </div>
+                    <p>MySQL</p>
+                </div>
+                <div>
+                    <div class="circle" style="--percent:75%">
+                        <h4>75<small>%</small></h4>
+                    </div>
+                    <p>MySQL</p>
+                </div>
+                <div>
+                    <div class="progress-bar">
+                        <p>Node JS <span>65%</span></p>
+                        <progress max="100" value="65"></progress>
+                    </div>
+                    <div>
+                        <div class="progress-bar">
+                            <p>PostgreSQL <span>75%</span></p>
+                            <progress max="100" value="75"></progress>
+                        </div>
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <h2 id="resume">My <span class="colored">Experience</span></h2>
+            <div class="divider ltr"></div>
+
+            <section class="experiences">
+                <div class="experience">
+                    <h2>Senior Python Developer</h2>
+                    <h4>Google Inc. <span class="date">Oct, 2023</span> &#x26AC; <span class="date">Dec, 2023</span></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quidem suscipit ratione sit cum, expedita, nostrum sint perspiciatis illo ea quia culpa accusamus eveniet, quas corporis ut iusto quam repudiandae.</p>
+                </div>
+                <div class="experience">
+                    <h2>Database Developer</h2>
+                    <h4>Freshworks Inc. <span class="date">May, 2024</span> &#x26AC; <span class="date">Augt, 2024</span></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quidem suscipit ratione sit cum, expedita, nostrum sint perspiciatis illo ea quia culpa accusamus eveniet, quas corporis ut iusto quam repudiandae.</p>
+                </div>
+                <div class="experience">
+                    <h2>Full Stack Web Developer</h2>
+                    <h4>Integrity Software, Icc. <span class="date">Oct, 2024</span> &#x26AC; <span class="date">Dec, 2024</span></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quidem suscipit ratione sit cum, expedita, nostrum sint perspiciatis illo ea quia culpa accusamus eveniet, quas corporis ut iusto quam repudiandae.</p>
+                </div>
+            </section>
+            <h1>My <span class="colored">Contributions</span></h1>
+            <div class="divider ltr"></div>
+
+                <!-- Contribution -->
+
+            <section class="contribution">
+                <div class="wrapper">
+                    <activity-graph
+	                    range-start="2021-01-01"
+	                    range-end="2021-12-31"
+	                    activity-levels="0,1,2,3,5"
+	                    activity-data="2021-01-01,2021-01-01,2021-01-01,2021-01-01,2021-01-01,2021-01-01,2021-01-02,2021-01-02,2021-01-02,2021-01-02,2021-01-02,2021-01-03,2021-01-03,2021-01-03,2021-01-04,2021-01-04,2021-01-04,2021-01-05,2021-01-05,2021-01-06,2021-01-06,2021-01-06,2021-01-06,2021-01-06,2021-01-07,2021-01-07,2021-01-08,2021-01-08,2021-01-08,2021-01-09,2021-01-11,2021-01-11,2021-01-11,2021-01-11,2021-01-11,2021-01-12,2021-01-12,2021-01-12,2021-01-12,2021-01-15,2021-01-15,2021-01-16,2021-01-16,2021-01-16,2021-01-18,2021-01-18,2021-01-18,2021-01-21,2021-01-21,2021-01-21,2021-01-21,2021-01-22,2021-01-22,2021-01-23,2021-01-23,2021-01-24,2021-01-24,2021-01-24,2021-01-24,2021-01-27,2021-01-27,2021-01-27,2021-01-27,2021-01-28,2021-01-28,2021-01-29,2021-01-29,2021-01-29,2021-01-30,2021-01-30,2021-01-30,2021-01-30,2021-02-01,2021-02-01,2021-02-01,2021-02-01,2021-02-01,2021-02-01,2021-02-02,2021-02-02,2021-02-02,2021-02-02,2021-02-02,2021-02-03,2021-02-03,2021-02-03,2021-02-04,2021-02-04,2021-02-04,2021-02-05,2021-02-05,2021-02-06,2021-02-06,2021-02-06,2021-02-06,2021-02-06,2021-02-07,2021-02-07,2021-02-08,2021-02-08,2021-02-08,2021-02-09,2021-02-11,2021-02-11,2021-02-11,2021-02-11,2021-02-11,2021-02-12,2021-02-12,2021-02-12,2021-02-12,2021-02-15,2021-02-15,2021-02-16,2021-02-16,2021-02-16,2021-02-18,2021-02-18,2021-02-18,2021-02-21,2021-02-21,2021-02-21,2021-02-21,2021-02-22,2021-02-22,2021-02-23,2021-02-23,2021-02-24,2021-02-24,2021-02-24,2021-02-24,2021-02-27,2021-02-27,2021-02-27,2021-02-27,2021-02-28,2021-02-28,2021-02-29,2021-02-29,2021-02-29,2021-02-30,2021-02-30,2021-02-30,2021-02-30,2021-03-01,2021-03-01,2021-03-01,2021-03-01,2021-03-01,2021-03-01,2021-03-02,2021-03-02,2021-03-02,2021-03-02,2021-03-02,2021-03-03,2021-03-03,2021-03-03,2021-03-04,2021-03-04,2021-03-04,2021-03-05,2021-03-05,2021-03-06,2021-03-06,2021-03-06,2021-03-06,2021-03-06,2021-03-07,2021-03-07,2021-03-08,2021-03-08,2021-03-08,2021-03-09,2021-03-11,2021-03-11,2021-03-11,2021-03-11,2021-03-11,2021-03-12,2021-03-12,2021-03-12,2021-03-12,2021-03-15,2021-03-15,2021-03-16,2021-03-16,2021-03-16,2021-03-18,2021-03-18,2021-03-18,2021-03-21,2021-03-21,2021-03-21,2021-03-21,2021-03-22,2021-03-22,2021-03-23,2021-03-23,2021-03-24,2021-03-24,2021-03-24,2021-03-24,2021-03-27,2021-03-27,2021-03-27,2021-03-27,2021-03-28,2021-03-28,2021-03-29,2021-03-29,2021-03-29,2021-03-30,2021-03-30,2021-03-30,2021-03-30,2021-04-01,2021-04-01,2021-04-01,2021-04-01,2021-04-01,2021-04-01,2021-04-02,2021-04-02,2021-04-02,2021-04-02,2021-04-02,2021-04-03,2021-04-03,2021-04-03,2021-04-04,2021-04-04,2021-04-04,2021-04-05,2021-04-05,2021-04-06,2021-04-06,2021-04-06,2021-04-06,2021-04-06,2021-04-07,2021-04-07,2021-04-08,2021-04-08,2021-04-08,2021-04-09,2021-04-11,2021-04-11,2021-04-11,2021-04-11,2021-04-11,2021-04-12,2021-04-12,2021-04-12,2021-04-12,2021-04-15,2021-04-15,2021-04-16,2021-04-16,2021-04-16,2021-04-18,2021-04-18,2021-04-18,2021-04-21,2021-04-21,2021-04-21,2021-04-21,2021-04-22,2021-04-22,2021-04-23,2021-04-23,2021-04-24,2021-04-24,2021-04-24,2021-04-24,2021-04-27,2021-04-27,2021-04-27,2021-04-27,2021-04-28,2021-04-28,2021-04-29,2021-04-29,2021-04-29,2021-04-30,2021-04-30,2021-04-30,2021-04-30,2021-05-01,2021-05-01,2021-05-01,2021-05-01,2021-05-01,2021-05-01,2021-05-02,2021-05-02,2021-05-02,2021-05-02,2021-05-02,2021-05-03,2021-05-03,2021-05-03,2021-05-04,2021-05-04,2021-05-04,2021-05-05,2021-05-05,2021-05-06,2021-05-06,2021-05-06,2021-05-06,2021-05-06,2021-05-07,2021-05-07,2021-05-08,2021-05-08,2021-05-08,2021-05-09,2021-05-11,2021-05-11,2021-05-11,2021-05-11,2021-05-11,2021-05-12,2021-05-12,2021-05-12,2021-05-12,2021-05-15,2021-05-15,2021-05-16,2021-05-16,2021-05-16,2021-05-18,2021-05-18,2021-05-18,2021-05-21,2021-05-21,2021-05-21,2021-05-21,2021-05-22,2021-05-22,2021-05-23,2021-05-23,2021-05-24,2021-05-24,2021-05-24,2021-05-24,2021-05-27,2021-05-27,2021-05-27,2021-05-27,2021-05-28,2021-05-28,2021-05-29,2021-05-29,2021-05-29,2021-05-30,2021-05-30,2021-05-30,2021-05-30,2021-06-01,2021-06-01,2021-06-01,2021-06-01,2021-06-01,2021-06-01,2021-06-02,2021-06-02,2021-06-02,2021-06-02,2021-06-02,2021-06-03,2021-06-03,2021-06-03,2021-06-04,2021-06-04,2021-06-04,2021-06-05,2021-06-05,2021-06-06,2021-06-06,2021-06-06,2021-06-06,2021-06-06,2021-06-07,2021-06-07,2021-06-08,2021-06-08,2021-06-08,2021-06-09,2021-06-11,2021-06-11,2021-06-11,2021-06-11,2021-06-11,2021-06-12,2021-06-12,2021-06-12,2021-06-12,2021-06-15,2021-06-15,2021-06-16,2021-06-16,2021-06-16,2021-06-18,2021-06-18,2021-06-18,2021-06-21,2021-06-21,2021-06-21,2021-06-21,2021-06-22,2021-06-22,2021-06-23,2021-06-23,2021-06-24,2021-06-24,2021-06-24,2021-06-24,2021-06-27,2021-06-27,2021-06-27,2021-06-27,2021-06-28,2021-06-28,2021-06-29,2021-06-29,2021-06-29,2021-06-30,2021-06-30,2021-06-30,2021-06-30,"
+	                 ></activity-graph>
+                </div>
+            </section>
+
+
+
+
+            <!-- Project -->
+
+            <h2 id="projects">My <span class="colored">Projects</span></h2>
+            <div class="divider ltr"></div>
+
+            <section class="projects">
+                <div class="project-1">
+                    <img src="img/Avatar-Galang.png" alt="">
+                    <h3>Project <span class="colored">Title-1</span></h3>
+                </div>
+                <div class="project-2">
+                    <img src="img/Avatar-Galang.png" alt="">
+                    <h3>Project <span class="colored">Title-2</span></h3>
+                </div>
+                <div class="project-3">
+                    <img src="img/NAS.jpg" alt="">
+                    <h3>Project <span class="colored">Title-3</span></h3>
+                </div>
+                <div class="project-4">
+                    <img src="img/Avatar-Galang.png" alt="">
+                    <h3>Project <span class="colored">Title-4</span></h3>
+                </div>
+                <div class="project-5">
+                    <img src="img/Avatar-Galang.png" alt="">
+                    <h3>Project <span class="colored">Title-5</span></h3>
+                </div>
+            </section>
+
+        <!-- Blogs -->
+            <h2 id="blogs">My <span class="colored">Blogs</span></h2>
+            <div class="divider ltr"></div>
+
+            <secrion class="blogs">
+                <div class="blog-box">
+                    <img src="img/web design.png" alt="">
+                    <div>
+                        <h3>Web Design Tools</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nobis dolores amet repellendus laboriosam veniam porro eum rerum corporis, aperiam accusantium debitis minus impedit error? Id maiores officiis suscipit aperiam!</p>
+                        <span class="link"><a href="#">Read More</a><ion-icon name="caret-forward-outline"></ion-icon></span>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <img src="img/web design.png" alt="">
+                    <div>
+                        <h3>Web Design Tools</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nobis dolores amet repellendus laboriosam veniam porro eum rerum corporis, aperiam accusantium debitis minus impedit error? Id maiores officiis suscipit aperiam!</p>
+                        <span class="link"><a href="#">Read More</a><ion-icon name="caret-forward-outline"></ion-icon></span>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <img src="img/web design 3.png" alt="">
+                    <div>
+                        <h3>Web Design Tools</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nobis dolores amet repellendus laboriosam veniam porro eum rerum corporis, aperiam accusantium debitis minus impedit error? Id maiores officiis suscipit aperiam!</p>
+                        <span class="link"><a href="#">Read More</a><ion-icon name="caret-forward-outline"></ion-icon></span>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <img src="img/web design 2.png" alt="">
+                    <div>
+                        <h3>Web Design Tools</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nobis dolores amet repellendus laboriosam veniam porro eum rerum corporis, aperiam accusantium debitis minus impedit error? Id maiores officiis suscipit aperiam!</p>
+                        <span class="link"><a href="#">Read More</a><ion-icon name="caret-forward-outline"></ion-icon></span>
+                    </div>
+                </div>
+            </secrion>
+
+            <!-- Testimonials -->
+
+            <br><h2>My <span class="colored">Testimonials</span></h2>
+            <div class="divider ltr"></div>
+
+            <section class="testimonials">
+                <div class="testimonial-box">
+                    <h1>What <span class="colored">Clients say About Me?</span></h1>
+                </div>
+                <div class="testimonial-box">
+                    <img src="img/Bu Freya.png" alt="">
+                    <span>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </span>
+                    <h3>Freyanashifa</h3> <i>Member JKT-48</i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae repellendus consectetur in, libero ut deserunt, esse delectus quos quo rem aliquam </p>
+                </div>
+                <div class="testimonial-box">
+                    <img src="img/christy.png" alt="">
+                    <span>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </span>
+                    <h3>Angelina Christy</h3> <i>Member JKT-48</i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae repellendus consectetur in, libero ut deserunt, esse delectus quos quo rem aliquam perspiciatis provident, possimus voluptate a explicabo quisquam eveniet qui.</p>
+                </div>
+                <div class="testimonial-box">
+                    <img src="img/zee2.png" alt="">
+                    <span>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half-outline"></ion-icon>
+                    </span>
+                    <h3>Shafaa Asadel</h3> <i>Member JKT-48</i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae repellendus consectetur in, libero ut deserunt, esse delectus quos quo rem aliquam perspiciatis provident, possimus voluptate a explicabo quisquam eveniet qui.</p>
+                </div>
+            </section>
+
+            <!-- Contact -->
+
+            <h2 id="contact">Contact <span class="colored">Me</span></h2>
+            <div class="divider ltr"></div>
+
+            <section>
+                <iframe class="map" width="100%" height="300" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2876.3366039503453!2d115.23850607328191!3d-8.62571089142039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23f4bd8f99395%3A0x7d4c78b93fa6f2c8!2sNamastay%20Bali!5e1!3m2!1sid!2sid!4v1742489462780!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           
+                <form action="#" class="contact">
+                    <div>
+                        <input type="text" class="input" name="firstname" placeholder="Your Name...">
+                    </div>
+                    <div>
+                        <input type="text" class="input" name="lasttname" placeholder="Your Last Name...">
+                    </div>
+                    <div>
+                        <input type="email" class="input" name="email" placeholder="Your Email Address...">
+                    </div>
+                    <div>
+                        <textarea class="input" rows="4" name="subject" placeholder="Write Somthing..."></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="submit">Send</button>
+                    </div>
+
+
+
+                </form>
+            </section>
+
+
+        </div>
+    </div>
+
+    </div>
+ 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

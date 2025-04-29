@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@mariohamann/activity-graph": "^1.0.5",
+    "typed.js": "^2.1.0"
+  }
+}
